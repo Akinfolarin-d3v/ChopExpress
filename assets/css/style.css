@@ -2402,7 +2402,7 @@ textarea.input-field {
   display: flex;
   align-items: center;
   gap: 15px;
-  background: rgba(255, 255, 255, 0.02); /* Transparent white */
+  background: rgba(255, 255, 255, 0.05); /* Transparent white */
   backdrop-filter: blur(10px); /* Blur effect */
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -2436,7 +2436,7 @@ textarea.input-field {
 
 .menu-card h3 {
   font-size: 1.2em;
-  color: #000;
+  color: #fff;
   margin-bottom: 5px;
 }
 
