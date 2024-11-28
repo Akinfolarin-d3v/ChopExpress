@@ -408,6 +408,10 @@ document.getElementById("place-order-btn").addEventListener("click", function(ev
 
     // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
+   // Redirect to the homepage after a slight delay
+    setTimeout(() => {
+        window.location.href = "index.html"; // Replace "index.html" with your homepage URL
+    }, 1000); // Adjust the delay as needed (e.g., 1 second)
 });
 
 
