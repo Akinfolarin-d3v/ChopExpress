@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>ChopExpress - Amazing & Delicious Food</title>
+  <meta name="title" content="ChopExpress - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by Akinfolarin.d3v">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.PNG" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ChopExpress</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Lakeside junction, Ashaley Botwe. Opposite GTBank, Accra, Ghana.
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8:00 am to 11:30 pm</span>
+      </div>
+
+      <a href="tel:+2330302522896" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+2330302522896</span>
+      </a>
+
+      <div class="separator"></div>
+
+     
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.PNG" width="160" height="50" alt="ChopExpress - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.PNG" width="160" height="50" alt="ChopExpress - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          
+          
+
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Lakeside junction, Ashaley Botwe. Opposite GTBank, Accra, Ghana.
+          </address>
+
+          <p class="body-4 navbar-text">Open: 8:00 am - 11:30 pm</p>
+
+          <a href="mailto:chopexpressrestaurant@gmail.com" class="body-4 sidebar-link">chopexpressrestaurant@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Order Request</p>
+
+          <a href="tel:+2330302522896" class="body-1 contact-number hover-underline">
+            +2330302522896
+          </a>
+        </div>
+
+      </nav>
+
+    
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              
+              <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+                  <div class="order-container">
+                    <h2>Your Order</h2>
+                    <ul id="checkout-cart-items" class="order-list"></ul>
+                    <p id="checkout-total-price" class="total-price"></p>
+                
+                    
+                    <h2>DELIVERY DETAILS</h2>
+                    <form id="checkout-form" class="checkout-form">
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                
+                        <label for="phone" class="visually-hidden">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                
+                        <label for="address" class="visually-hidden">Address</label>
+                        <textarea id="address" name="address" placeholder="Address" required></textarea>
+                
+                        <button type="submit" id="place-order-btn">Place Order</button>
+                    </form>
+                    
+                    <style>
+                      /* Container with Blur Effect */
+                      .order-container {
+                          background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for blur effect */
+                          backdrop-filter: blur(0.1px); /* Apply blur effect */
+                          padding: 10px;
+                          border-radius: 10px;
+                          width: 300px;
+                          max-width: 400px;
+                          overflow-y: auto;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                      }
+                      .bank-dts {
+                        color: #000000;
+                        font-size: 8px;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                      }
+
+                      /* Headers */
+                      h2 {
+                          font-size: 1.5rem;
+                          color: #333;
+                          margin-bottom: 15px;
+                      }
+
+                      /* Order List */
+                      .order-list {
+                          list-style-type: none;
+                          padding: 0;
+                          margin: 10px 0;
+                          color: #000000;
+                          background-color: #fdd02e;
+                          backdrop-filter: blur(0.1px); /* Apply blur effect */
+                          border-radius: 10px;
+                          font-size: 8px;
+                          max-height: 100px;
+                          z-index: 1000;
+                          overflow-y: auto;
+
+                      }
+
+                      .total-price {
+                          font-weight: bolder;
+                          margin-top: 10px;
+                          color: #000000;
+                      }
+
+                      /* Form Styling */
+                      .checkout-form {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 15px;
+                      }
+
+                      .checkout-form input,
+                      .checkout-form textarea {
+                          width: 100%;
+                          padding: 12px;
+                          font-size: 1rem;
+                          border: 1px solid yellow; /* Yellow border */
+                          border-radius: 4px;
+                          background-color: #f9f9f9;
+                          transition: border-color 0.3s, background-color 0.3s;
+                      }
+
+                      .checkout-form input:focus,
+                      .checkout-form textarea:focus {
+                          outline: none;
+                          border-color: #fdd02e; /* Deeper yellow on focus */
+                          background-color: #fff;
+                      }
+
+                      .checkout-form button {
+                          padding: 12px;
+                          font-size: 1rem;
+                          font-weight: bold;
+                          color: #000000;
+                          background-color: #fdd02e;
+                          border: none;
+                          border-radius: 4px;
+                          cursor: pointer;
+                          transition: background-color 0.3s;
+                      }
+
+                      .checkout-form button:hover {
+                          background-color: #fdd02e;
+                      }
+
+                      /* Accessibility: Visually Hidden Labels */
+                      .visually-hidden {
+                          position: absolute;
+                          width: 1px;
+                          height: 1px;
+                          padding: 0;
+                          margin: -1px;
+                          overflow: hidden;
+                          clip: rect(0, 0, 0, 0);
+                          border: 0;
+                      }
+
+                    </style>
+                </div>
+                
+
+            
+    
+
+        <script>
+            
+
+            
+ // Initialize EmailJS
+(function() {
+    emailjs.init("wp7mSbUDSzvwKdmrr"); // Replace with your EmailJS user ID
+})();
+
+// Retrieve and display cart items from localStorage
+const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+const checkoutCartItems = document.getElementById("checkout-cart-items");
+const checkoutTotalPrice = document.getElementById("checkout-total-price");
+
+let totalPrice = 0;
+
+// Populate the cart items on the page
+if (cartItems.length > 0) {
+    cartItems.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${item.name} - ₵${(item.price * item.quantity).toFixed(2)} x ${item.quantity}`;
+        checkoutCartItems.appendChild(listItem);
+        totalPrice += item.price * item.quantity;
+    });
+}
+
+// Update the total price on the page
+checkoutTotalPrice.textContent = `Total: ₵${totalPrice.toFixed(2)}`;
+
+document.getElementById("place-order-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    // Collect user details
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+
+    // Check if cart items are present
+    const cartItemsDetails = cartItems.length > 0
+        ? cartItems.map(item => `${item.name} x ${item.quantity}`).join(", ")
+        : "No items in the cart";
+
+    // Format the message for WhatsApp
+    const message = `Hello! Here are my order details:\n\n` +
+                    `Name: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n` +
+                    `Order Items: ${cartItemsDetails}\nTotal Price: ₵${totalPrice.toFixed(2)}\n\n` +
+                    `Thank you!`;
+
+    // Open WhatsApp with the pre-filled message
+    const whatsappNumber = "2330530549169"; // You can use the actual number
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    // Clear cart items from localStorage
+    localStorage.removeItem("cartItems");
+
+    // Optionally update the UI
+    checkoutCartItems.innerHTML = ""; // Clear the displayed cart items
+    checkoutTotalPrice.textContent = "Total: ₵0.00"; // Reset total price display
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+});
+
+
+
+
+
+
+        </script>
+        
+        
+
+        
+      </section>
+     
+        
+        
+
+     <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Savor hygienic, meticulously prepared food, made with the highest standards of cleanliness and care for your peace of mind.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Experience a fresh and welcoming environment, perfect for grabbing your takeout order with ease and comfort.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text"> Highly skilled chefs, known for their masterful techniques to modern cuisine, bringing a unique flair to every dish.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text"> We cater to special party orders, offering customized menus to make your celebration unforgettable.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center" id="footer"
+    >
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.PNG" width="160" height="50" loading="lazy" alt="ChopExpress home">
+          </a>
+
+          <address class="body-4">
+            Lakeside junction, Ashaley Botwe. Opposite GTBank, Accra, Ghana.
+          </address>
+
+          <a href="mailto:ChopExpress@gmail.com" class="body-4 contact-link">chopexpressrestaurant@gmail.com</a>
+
+          <a href="tel:+2330302522896" class="body-4 contact-link">Booking Request : +2330302522896</a>
+
+          <p class="body-4">
+            Open : 08:00 am - 11:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+        
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+        
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+
+          <li>
+            <a href="https://snapchat.com/t/GIKYm8fa" class="label-2 footer-link hover-underline">Snapchat</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/chopexpressgh?igsh=MWN3d2JwdTNhdWt0cQ%3D%3D" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/ChopExpressGH" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+         
+
+          <li>
+            <a href="https://www.tiktok.com/@chopexpressgh?_t=8oaOmJdhXqn&_r=1" class="label-2 footer-link hover-underline">TikTok</a>
+          </li>
+
+
+          <li>
+            <a href="https://maps.app.goo.gl/caccdm5KZgQ5766R6" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 ChopExpress <a href="http://folafolio.dev" class="link" target="_blank" alt="Akinfolarin.d3v trademark">
+            <small>Designed by</small> Akinfolarin.D3v™
+          </a>
+        </p>
+        <style>
+          .footer-bottom {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #858383; /* Optional: Set a background color */
+          color: white; /* Optional: Set the text color */
+          text-align: center; /* Optional: Center the text */
+          padding: 10px 0; /* Optional: Add some padding */
+          z-index: 1000; /* Optional: Ensure the footer is above other content */
+        }
+
+        .footer-bottom a {
+          color: white; /* Optional: Change link color */
+          text-decoration: none; /* Optional: Remove underline */
+        }
+
+        .footer-bottom a:hover {
+          text-decoration: underline; /* Optional: Add underline on hover */
+        }
+
+        </style>
+      </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+<!--   
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

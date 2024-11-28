@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>ChopExpress - Amazing & Delicious Food</title>
+  <meta name="title" content="ChopExpress - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by Akinfolarin.D3v">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.PNG" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ChopExpress</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Lakeside junction, Ashaley Botwe. Opposite GTBank, Accra, Ghana.
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+2330302522896" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+233 030 252 2896</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:chopexpressrestaurant@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">chopexpressrestaurant@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.PNG" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Lakeside junction, Ashaley Botwe. <br>
+             Opposite GTBank, Accra, Ghana.
+          </address>
+
+          <p class="body-4 navbar-text">Open: 8.00 am - 11.30pm</p>
+
+          <a href="mailto:chopexpressrestaurant@grilli.com" class="body-4 sidebar-link">chopexpressrestaurant@grilli.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+2330302522896" class="body-1 contact-number hover-underline">
+            +233-030-252-2896
+          </a>
+        </div>
+
+      </nav>
+
+      
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <picture>
+                <!-- Image for smaller devices -->
+                <source srcset="./assets/images/hero-small.jpg" media="(max-width: 768px)">
+                <!-- Default image for larger devices -->
+                <img src="./assets/images/hero.jpg" width="1880" height="950" alt="" class="img-cover">
+              </picture>
+            </div>
+      
+            <p class="label-2 section-subtitle slider-reveal shadow-text">Traditional & Hygiene</p>
+            <h1 class="display-1 hero-title slider-reveal shadow-text">
+              For the love of <br>
+              delicious food
+            </h1>
+            <p class="body-2 hero-text slider-reveal shadow-text">
+              Delicious food and great service! True taste of West African cuisine.
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1 shadow-text">View Our Menu</span>
+              <span class="text text-2 shadow-text" aria-hidden="true">View Our Menu</span>
+            </a>
+          </li>
+      
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <picture>
+                <source srcset="./assets/images/hero2-small.jpg" media="(max-width: 768px)">
+                <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
+              </picture>
+            </div>
+      
+            <p class="label-2 section-subtitle slider-reveal shadow-text">Delightful Experience</p>
+            <h1 class="display-1 hero-title slider-reveal shadow-text">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+            <p class="body-2 hero-text slider-reveal shadow-text">
+              Delicious food and great service! True taste of West African cuisine.
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1 shadow-text">View Our Menu</span>
+              <span class="text text-2 shadow-text" aria-hidden="true">View Our Menu</span>
+            </a>
+          </li>
+      
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <picture>
+                <source srcset="./assets/images/hero4-small.jpg" media="(max-width: 768px)">
+                <img src="./assets/images/hero4.jpg" width="1880" height="950" alt="" class="img-cover">
+              </picture>
+            </div>
+      
+            <p class="label-2 section-subtitle slider-reveal shadow-text">Amazing & Delicious</p>
+            <h1 class="display-1 hero-title slider-reveal shadow-text">
+              Where every flavor <br>
+              tells a story
+            </h1>
+            <p class="body-2 hero-text slider-reveal shadow-text">
+              Delicious food and great service! True taste of West African cuisine.
+            </p>
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1 shadow-text">View Our Menu</span>
+              <span class="text text-2 shadow-text" aria-hidden="true">View Our Menu</span>
+            </a>
+          </li>
+        </ul>
+      
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+      
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+      
+
+
+<!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+
+            <p class="section-text">
+              Discover Delight in every bite at ChopExpress, your go-to destination for authentic West African flavors! Founded in
+              Ghana, we're passionate about serving international and traditional dishes made with locally sourced ingredients and time-honored recipes. From savory samosas, crispy chicken drumsticks, and flavorful kelewele, every meal at ChopExpress brings the rich taste and culture of West Africa right to your table. Whether you're dining in or on the go, we're here to share the comfort and warmth of top-notch cuisine with you!
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+233 (030) 252 2896</a>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">View Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Menu</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+    
+
+      
+      <!-- 
+        - #MENU
+      -->
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+      
+          <!-- Menu Section -->
+          <div class="menu-section">
+            <h3 class="section-subtitle text-center label-2">Menu</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-0.png" width="100" height="100" alt="Tilapia & Vegetable Rice">
+                  </figure>
+                  <div>
+                    <!-- <span class="badge label-1">New</span> -->
+                    <h3>TILAPIA & VEGETABLE RICE</h3>
+                    <span class="price">₵120.00</span>
+                    <button class="add-to-cart" data-name="TILAPIA & VEG RICE" data-price="120">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-1.png" width="100" height="100" alt="SHAWARMA (CHICKEN)">
+                  </figure>
+                  <div>
+                    <h3>CHICKEN SHAWARMA</h3>
+                    <span class="price">₵90.00   </span>
+                    <button class="add-to-cart" data-name="CHICKEN SHAWARMA" data-price="90 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-2.png" width="100" height="100" alt="SHAWARMA (BEEF)">
+                  </figure>
+                  <div>
+                    <h3>BEEF SHAWARMA</h3>
+                    <span class="price">₵90.00   </span>
+                    <button class="add-to-cart" data-name="BEEF SHAWARMA" data-price="90 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-10.png" width="100" height="100" alt="TILAPIA DELIGHT">
+                  </figure>
+                  <div>
+                    <h3>TILAPIA DELIGHT</h3>
+                    <span class="price">₵70.00   </span>
+                    <button class="add-to-cart" data-name="TILAPIA DELIGHT" data-price="70">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-6.png" width="100" height="100" alt="PIE LOVER">
+                  </figure>
+                  <div>
+                    <h3>PIE LOVER</h3>
+                    <span class="price">₵40.00   </span>
+                    <button class="add-to-cart" data-name="PIE LOVER" data-price="40 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-7.png" width="100" height="100" alt="CHICKEN SANDWICH MEAL">
+                  </figure>
+                  <div>
+                    <h3>CHICKEN SANDWICH MEAL </h3>
+                    <span class="price">₵65.00   </span>
+                    <button class="add-to-cart" data-name="CHICKEN SANDWICH" data-price="65 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-7.png" width="100" height="100" alt="BEEF SANDWICH MEAL">
+                  </figure>
+                  <div>
+                    <h3>BEEF SANDWICH MEAL</h3>
+                    <span class="price">₵65.00   </span>
+                    <button class="add-to-cart" data-name="BEEF SANDWICH" data-price="65 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-8.png" width="100" height="100" alt="Chicken meal">
+                  </figure>
+                  <div>
+                    <h3>CHICKEN MEAL</h3>
+                    <span class="price">₵85.00   </span>
+                    <button class="add-to-cart" data-name="CHICKEN MEAL" data-price="85">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-11.png" width="100" height="100" alt="Turkey Meal">
+                  </figure>
+                  <div>
+                    <h3>TURKEY MEAL</h3>
+                    <span class="price">₵105.00   </span>
+                    <button class="add-to-cart" data-name="TURKEY MEAL" data-price="105 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Platters Section -->
+          <div class="platters-section">
+            <h3 class="section-subtitle text-center label-2">Platters</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-3.png" width="100" height="100" alt="CLASSIC GRILL BOX">
+                  </figure>
+                  <div>
+                    <h3>ROYAL CHOP BOX</h3>
+                    <span class="price">₵350.00</span>
+                    <button class="add-to-cart" data-name="ROYAL CHOP BOX" data-price="350">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <!-- <h2 class="headline-1 section-title text-center"> Platters </h2> -->
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-3.png" width="100" height="100" alt="CLASSIC GRILL BOX">
+                  </figure>
+                  <div>
+                    <h3>ROYAL CHOP BOX</h3>
+                    <span class="price">₵350.00   </span>
+                    <button class="add-to-cart" data-name="ROYAL CHOP BOX" data-price="350 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-3-.png" width="100" height="100" alt="CLASSIC GRILL BOX">
+                  </figure>
+                  <div>
+                    <h3>CLASSIC GRILL BOX</h3>
+                    <span class="price">₵240.00   </span>
+                    <button class="add-to-cart" data-name="CLASSIC GRILL BOX" data-price="240 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-5.png" width="100" height="100" alt="CLASSIC CHOP BOX">
+                  </figure>
+                  <div>
+                    <h3>CLASSIC CHOP BOX</h3>
+                    <span class="price">₵200.00   </span>
+                    <button class="add-to-cart" data-name="CLASSIC CHOP BOX" data-price="200 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-4.png" width="100" height="100" alt="Okra Stew">
+                  </figure>
+                  <div>
+                    <h3>PASTRY LOVER PACK 3</h3>
+                    <span class="price">₵35.00   </span>
+                    <button class="add-to-cart" data-name="PASTRY LOVER 3" data-price="85 ">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            </ul>
+          </div>
+      
+          <!-- Extras Section -->
+          <div class="extras-section">
+            <h3 class="section-subtitle text-center label-2">Extras</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/chicken-drumstick.png" width="60" height="60" alt="Grilled Chicken Drumstick">
+                  </figure>
+                  <div>
+                    <h3>GRILLED CHICKEN DRUMSTICK</h3>
+                    <span class="price">₵30.00</span>
+                    <button class="add-to-cart" data-name="CHICKEN DRUMSTICK" data-price="30">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/turkey-wing.png" width="60" height="60" alt="Grilled Turkey Wing">
+                  </figure>
+                  <div>
+                    <h3>GRILLED TURKEY WING</h3>
+                    <span class="price">₵40.00</span>
+                    <button class="add-to-cart" data-name="TURKEY WING" data-price="40">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/yam-chips.png" width="60" height="60" alt="Yam Chips">
+                  </figure>
+                  <div>
+                    <h3>YAM CHIPS</h3>
+                    <span class="price">₵20.00</span>
+                    <button class="add-to-cart" data-name="YAM CHIPS" data-price="20">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/beef-fingers.png" width="60" height="60" alt="Beef Fingers">
+                  </figure>
+                  <div>
+                    <h3>BEEF FINGERS</h3>
+                    <span class="price">₵25.00</span>
+                    <button class="add-to-cart" data-name="BEEF FINGERS" data-price="25">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/french-fries.png" width="60" height="60" alt="French Fries">
+                  </figure>
+                  <div>
+                    <h3>FRENCH FRIES</h3>
+                    <span class="price">₵20.00</span>
+                    <button class="add-to-cart" data-name="FRENCH FRIES" data-price="20">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/plain-rice.png" width="60" height="60" alt="Plain Rice">
+                  </figure>
+                  <div>
+                    <h3>PLAIN RICE</h3>
+                    <span class="price">₵25.00</span>
+                    <button class="add-to-cart" data-name="PLAIN RICE" data-price="25">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/menu-9.png" width="60" height="60" alt="Kelewele">
+                  </figure>
+                  <div>
+                    <h3>KELEWELE</h3>
+                    <span class="price">₵20.00</span>
+                    <button class="add-to-cart" data-name="KELEWELE" data-price="20">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/coleslaw.png" width="60" height="60" alt="Coleslaw">
+                  </figure>
+                  <div>
+                    <h3>COLESLAW</h3>
+                    <span class="price">₵15.00</span>
+                    <button class="add-to-cart" data-name="COLESLAW" data-price="15">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/green-pepper-dip.png" width="60" height="60" alt="Green Pepper Dip">
+                  </figure>
+                  <div>
+                    <h3>GREEN PEPPER DIP</h3>
+                    <span class="price">₵5.00</span>
+                    <button class="add-to-cart" data-name="GREEN PEPPER DIP" data-price="5">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/red-pepper-dip.png" width="60" height="60" alt="Red Pepper Dip">
+                  </figure>
+                  <div>
+                    <h3>RED PEPPER DIP</h3>
+                    <span class="price">₵5.00</span>
+                    <button class="add-to-cart" data-name="RED PEPPER DIP" data-price="5">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/black-pepper-dip.png" width="60" height="60" alt="Black Pepper Dip">
+                  </figure>
+                  <div>
+                    <h3>BLACK PEPPER DIP</h3>
+                    <span class="price">₵5.00</span>
+                    <button class="add-to-cart" data-name="BLACK PEPPER DIP" data-price="5">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/lemon-syrup.png" width="60" height="60" alt="Lemon Syrup">
+                  </figure>
+                  <div>
+                    <h3>LEMON SYRUP</h3>
+                    <span class="price">₵5.00</span>
+                    <button class="add-to-cart" data-name="LEMON SYRUP" data-price="5">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Cart Section -->
+        <div class="cart-section hidden">
+          <h2>Your Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <p id="total-price">Total: ₵0.00</p>
+          <button id="checkout-btn" class="checkout">CHECKOUT</button>
+        </div>
+      
+        <!-- Fixed Button to Toggle Cart Visibility -->
+        <button id="toggle-cart-btn" class="fixed-button">
+          View Cart
+          <span id="cart-count" class="cart-count-badge">0</span>
+        </button>
+            
+            
+
+
+             
+
+
+                <style>
+                .fixed-button {
+                  position: fixed; /* Needed for positioning the badge */
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  bottom: 600px;
+                  right: 20px;
+
+                }
+                
+                /* Style for the item count badge */
+                .cart-count-badge {
+                  position: absolute;
+                  top: -10px; /* Adjust as needed to position above the button */
+                  right: -10px; /* Adjust to position on the right side */
+                  background-color: red;
+                  color: white;
+                  border-radius: 20%;
+                  padding: 2px 6px;
+                  font-size: 12px;
+                  display: inline-block;
+                }
+                
+                
+                  
+                  
+                </style>
+            </ul>
+
+        
+          </ul>
+
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+       
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Shito and vegetable rice a perfect harmony of bold Ghanaian spice and wholesome goodness, bringing flavor to every grain.”
+
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Adwoa"
+              class="img">
+
+            <p class="label-2 profile-name">Adwoa</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Savor hygienic, meticulously prepared food, made with the highest standards of cleanliness and care for your peace of mind.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Experience a fresh and welcoming environment, perfect for grabbing your takeout order with ease and comfort.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Highly skilled chefs, known for their masterful techniques to modern cuisine, bringing a unique flair to every dish.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">We cater to special party orders, offering customized menus to make your celebration unforgettable.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <!-- <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Blog</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Blog</span>
+          </a>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center" id="footer"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.PNG" width="160" height="50" loading="lazy" alt="ChopExpress home">
+          </a>
+
+          <address class="body-4">
+            Lakeside junction, Ashaley Botwe. Opposite GTBank, Accra, Ghana.
+          </address>
+
+          <a href="mailto:ChopExpress@gmail.com" class="body-4 contact-link">chopexpressrestaurant@gmail.com</a>
+
+          <a href="tel:+2330302522896" class="body-4 contact-link">Booking Request : +2330302522896</a>
+
+          <p class="body-4">
+            Open : 08:00 am - 11:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+        
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+        
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+
+          <li>
+            <a href="https://snapchat.com/t/GIKYm8fa" class="label-2 footer-link hover-underline">Snapchat</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/chopexpressgh?igsh=MWN3d2JwdTNhdWt0cQ%3D%3D" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/ChopExpressGH" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+         
+
+          <li>
+            <a href="https://www.tiktok.com/@chopexpressgh?_t=8oaOmJdhXqn&_r=1" class="label-2 footer-link hover-underline">TikTok</a>
+          </li>
+
+
+          <li>
+            <a href="https://maps.app.goo.gl/caccdm5KZgQ5766R6" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 ChopExpress <a href="http://folafolio.dev" class="link" target="_blank" alt="Akinfolarin.d3v trademark">
+            <small>Designed by</small> Akinfolarin.D3v™
+          </a>
+        </p>
+        <style>
+          .footer-bottom {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #858383; /* Optional: Set a background color */
+          color: white; /* Optional: Set the text color */
+          text-align: center; /* Optional: Center the text */
+          padding: 10px 0; /* Optional: Add some padding */
+          z-index: 1000; /* Optional: Ensure the footer is above other content */
+        }
+
+        .footer-bottom a {
+          color: white; /* Optional: Change link color */
+          text-decoration: none; /* Optional: Remove underline */
+        }
+
+        .footer-bottom a:hover {
+          text-decoration: underline; /* Optional: Add underline on hover */
+        }
+
+        </style>
+      </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
