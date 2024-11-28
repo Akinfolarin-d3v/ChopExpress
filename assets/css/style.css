@@ -616,7 +616,7 @@ body.nav-active { overflow: hidden; }
 
 .header.active {
   padding-block: 20px;
-  background-color: var(--eerie-black-4);
+  background-color: transparent;
   border-color: var(--black-alpha-15);
 }
 
