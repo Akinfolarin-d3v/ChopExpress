@@ -605,20 +605,23 @@ body.nav-active { overflow: hidden; }
 .header .btn { display: none; }
 
 .header {
-  position: fixed;
-  top: 0;                                
+  /* position: fixed; */
+  top: 0;
   left: 0;
   width: 100%;
-  padding-block: 20px;                    
-  background-color: #000;                
-  z-index: 10;                           
+  background-color: transparent;
+  padding-block: 40px;
+  z-index: 4;
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .header.active {
-  padding-block: 10px;  
-  background-color: #000; 
+  padding-block: 20px;
+  background-color: var(--eerie-black-4);
   border-color: var(--black-alpha-15);
 }
 
@@ -633,6 +636,8 @@ body.nav-active { overflow: hidden; }
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+   margin-top: 0;
+  padding-top: 0;
 }
 
 .nav-open-btn {
@@ -672,6 +677,8 @@ body.nav-active { overflow: hidden; }
   visibility: hidden;
   z-index: 2;
   transition: var(--transition-2);
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .navbar.active {
@@ -718,7 +725,7 @@ body.nav-active { overflow: hidden; }
 .navbar-link .span { transition: var(--transition-1); }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: var(--gold-crayola);
+  color: #fdd02e;
   transform: translateX(20px);
 }
 
@@ -748,7 +755,8 @@ body.nav-active { overflow: hidden; }
   margin-inline: auto;
 }
 
-.navbar .contact-label { margin-block-end: 10px; }
+.navbar .contact-label { margin-block-end: 10px;
+color: #fdd02e; }
 
 .navbar::-webkit-scrollbar-thumb { background-color: var(--white-alpha-10); }
 
