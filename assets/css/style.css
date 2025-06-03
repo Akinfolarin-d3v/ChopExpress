@@ -332,16 +332,18 @@ body.nav-active { overflow: hidden; }
 
 .btn {
   position: relative;
-  color: var(--gold-crayola);
+  color: var(--black);
   font-size: var(--fontSize-label-2);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-5);
   max-width: max-content;
-  border: 2px solid var(--gold-crayola);
+  border: 2px solid var(--black);
   padding: 12px 45px;
   overflow: hidden;
   z-index: 1;
+  background-color: var(--gold-crayola);
+  
 }
 
 .btn::before {
@@ -379,8 +381,8 @@ body.nav-active { overflow: hidden; }
 }
 
 .btn-secondary {
-  background-color: var(--gold-crayola);
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--gold-crayola);
 }
 
 .btn-secondary::before { background-color: var(--smoky-black-1); }
@@ -1285,8 +1287,8 @@ fdd02e
 
 /* Button Styling */
 .add-to-cart {
-  background-color: #000000;
-  color: white;
+  background-color: var(--gold-crayola);
+  color: rgb(0, 0, 0);
   border: none;
   padding: 4px 8px;
   cursor: pointer;
