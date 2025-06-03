@@ -49,15 +49,11 @@
     <p class="text">ChopExpress</p>
   </div>
 
-
-
-
-
-  <!-- 
+ <!-- 
     - #TOP BAR
   -->
 
-  <div class="topbar">
+  <!-- <div class="topbar">
     <div class="container">
 
       <address class="topbar-item">
@@ -93,11 +89,7 @@
      
 
     </div>
-  </div>
-
-
-
-
+  </div> -->
 
   <!-- 
     - #HEADER
@@ -196,7 +188,6 @@
 
     </div>
   </header>
-
 
 
 
@@ -536,6 +527,44 @@
               <li>
                 <div class="menu-card">
                   <figure>
+                    <img src="./assets/images/jollof-rice.png" width="60" height="60" alt="jollof-rice">
+                  </figure>
+                  <div>
+                    <h3>JOLLOF RICE</h3>
+                    <span class="price">₵35.00</span>
+                    <button class="add-to-cart" data-name="JOLLOF RICE" data-price="35">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/fried-rice.png" width="60" height="60" alt="fried-rice">
+                  </figure>
+                  <div>
+                    <h3>FRIED RICE</h3>
+                    <span class="price">₵35.00</span>
+                    <button class="add-to-cart" data-name="FRIED RICE" data-price="35">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+
+                 <li>
+                <div class="menu-card">
+                  <figure>
+                    <img src="./assets/images/plain-rice.png" width="60" height="60" alt="Plain Rice">
+                  </figure>
+                  <div>
+                    <h3>PLAIN VEGETABLE RICE</h3>
+                    <span class="price">₵25.00</span>
+                    <button class="add-to-cart" data-name="PLAIN RICE" data-price="25">Add to Cart</button>
+                  </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="menu-card">
+                  <figure>
                     <img src="./assets/images/chicken-drumstick.png" width="60" height="60" alt="Grilled Chicken Drumstick">
                   </figure>
                   <div>
@@ -611,18 +640,6 @@
                 </div>
               </li>
             
-              <li>
-                <div class="menu-card">
-                  <figure>
-                    <img src="./assets/images/plain-rice.png" width="60" height="60" alt="Plain Rice">
-                  </figure>
-                  <div>
-                    <h3>PLAIN RICE</h3>
-                    <span class="price">₵25.00</span>
-                    <button class="add-to-cart" data-name="PLAIN RICE" data-price="25">Add to Cart</button>
-                  </div>
-                </div>
-              </li>
             
               <li>
                 <div class="menu-card">
@@ -710,13 +727,11 @@
         <div class="cart-section hidden">
           <h2>Your Cart</h2>
           <ul id="cart-items">
-            <!-- Cart items will be dynamically added here -->
           </ul>
           <p id="total-price">Total: ₵0.00</p>
           <button id="checkout-btn" class="checkout">CHECKOUT</button>
         </div>
       
-        <!-- Fixed Button to Toggle Cart Visibility -->
         <button id="toggle-cart-btn" class="fixed-button">
           View Cart
           <span id="cart-count" class="cart-count-badge">0</span>
@@ -730,7 +745,7 @@
 
                 <style>
                 .fixed-button {
-                  position: fixed; /* Needed for positioning the badge */
+                  position: fixed; 
                   padding: 10px 20px;
                   font-size: 16px;
                   cursor: pointer;
@@ -739,11 +754,10 @@
 
                 }
                 
-                /* Style for the item count badge */
                 .cart-count-badge {
                   position: absolute;
-                  top: -10px; /* Adjust as needed to position above the button */
-                  right: -10px; /* Adjust to position on the right side */
+                  top: -10px; 
+                  right: -10px;
                   background-color: red;
                   color: white;
                   border-radius: 20%;
@@ -769,6 +783,243 @@
 
         </div>
       </section>
+
+      <!--──────────────────────────────────────────────────────
+  # SPECIALS (updated to include Add to Cart buttons)
+──────────────────────────────────────────────────────-->
+<section class="section specials" id="specials">
+  <div class="container">
+    <h2>Today’s Specials</h2>
+
+    <!-- RICE SPECIALS -->
+    <details>
+      <summary>RICE SPECIALS</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Jollof Rice with Chicken Wings (Mini)</span>
+            <span>70 GH</span>
+            <button class="add-to-cart" data-name="Jollof Rice with Chicken Wings (Mini)" data-price="70">Add to Cart</button>
+          </li>
+          <li>
+            <span>Jollof Rice with Chicken Wings (Maxi)</span>
+            <span>120 GH</span>
+            <button class="add-to-cart" data-name="Jollof Rice with Chicken Wings (Maxi)" data-price="120">Add to Cart</button>
+          </li>
+          <li>
+            <span>Fried Rice with Chicken Wings (Mini)</span>
+            <span>80 GH</span>
+            <button class="add-to-cart" data-name="Fried Rice with Chicken Wings (Mini)" data-price="80">Add to Cart</button>
+          </li>
+          <li>
+            <span>Fried Rice with Chicken Wings (Maxi)</span>
+            <span>130 GH</span>
+            <button class="add-to-cart" data-name="Fried Rice with Chicken Wings (Maxi)" data-price="130">Add to Cart</button>
+          </li>
+          <li>
+            <span>Plain Vegetable Rice with Chicken Wings (Mini)</span>
+            <span>55 GH</span>
+            <button class="add-to-cart" data-name="Plain Vegetable Rice with Chicken Wings (Mini)" data-price="55">Add to Cart</button>
+          </li>
+          <li>
+            <span>Plain Vegetable Rice with Chicken Wings (Maxi)</span>
+            <span>100 GH</span>
+            <button class="add-to-cart" data-name="Plain Vegetable Rice with Chicken Wings (Maxi)" data-price="100">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- CHICKEN MEALS -->
+    <details>
+      <summary>CHICKEN MEALS</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Full Chicken</span>
+            <span>250 GH</span>
+            <button class="add-to-cart" data-name="Full Chicken" data-price="250">Add to Cart</button>
+          </li>
+          <li>
+            <span>Full Chicken Platter</span>
+            <span>500 GH</span>
+            <button class="add-to-cart" data-name="Full Chicken Platter" data-price="500">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Wings Pack (12)</span>
+            <span>120 GH</span>
+            <button class="add-to-cart" data-name="Chicken Wings Pack (12)" data-price="120">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Drumsticks (2), Jollof Rice</span>
+            <span>145 GH</span>
+            <button class="add-to-cart" data-name="Chicken Drumsticks (2), Jollof Rice" data-price="145">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Drumsticks (2), Fried Rice</span>
+            <span>155 GH</span>
+            <button class="add-to-cart" data-name="Chicken Drumsticks (2), Fried Rice" data-price="155">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Drumsticks (2), Plain Veg-Rice</span>
+            <span>110 GH</span>
+            <button class="add-to-cart" data-name="Chicken Drumsticks (2), Plain Veg-Rice" data-price="110">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Drumsticks (2), Fries/Yam Chips/Kelewele</span>
+            <span>100 GH</span>
+            <button class="add-to-cart" data-name="Chicken Drumsticks (2), Fries/Yam Chips/Kelewele" data-price="100">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- SALADS -->
+    <details>
+      <summary>SALADS</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Classic Salad</span>
+            <span>70 GH</span>
+            <button class="add-to-cart" data-name="Classic Salad" data-price="70">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Salad</span>
+            <span>85 GH</span>
+            <button class="add-to-cart" data-name="Chicken Salad" data-price="85">Add to Cart</button>
+          </li>
+          <li>
+            <span>Beef Salad</span>
+            <span>85 GH</span>
+            <button class="add-to-cart" data-name="Beef Salad" data-price="85">Add to Cart</button>
+          </li>
+          <li>
+            <span>Tuna Salad</span>
+            <span>85 GH</span>
+            <button class="add-to-cart" data-name="Tuna Salad" data-price="85">Add to Cart</button>
+          </li>
+          <li>
+            <span>Steamed Vegetables</span>
+            <span>90 GH</span>
+            <button class="add-to-cart" data-name="Steamed Vegetables" data-price="90">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- TURKEY MEAL -->
+    <details>
+      <summary>TURKEY MEAL</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Turkey Wings (2), Jollof Rice</span>
+            <span>165 GH</span>
+            <button class="add-to-cart" data-name="Turkey Wings (2), Jollof Rice" data-price="165">Add to Cart</button>
+          </li>
+          <li>
+            <span>Turkey Wings (2), Fried Rice</span>
+            <span>175 GH</span>
+            <button class="add-to-cart" data-name="Turkey Wings (2), Fried Rice" data-price="175">Add to Cart</button>
+          </li>
+          <li>
+            <span>Turkey Wings (2), Plain Veg-Rice</span>
+            <span>135 GH</span>
+            <button class="add-to-cart" data-name="Turkey Wings (2), Plain Veg-Rice" data-price="135">Add to Cart</button>
+          </li>
+          <li>
+            <span>Turkey Wings (2), Fries/Yam Chips/Kelewele</span>
+            <span>120 GH</span>
+            <button class="add-to-cart" data-name="Turkey Wings (2), Fries/Yam Chips/Kelewele" data-price="120">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- TILAPIA DELIGHT -->
+    <details>
+      <summary>TILAPIA DELIGHT</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Grilled Tilapia</span>
+            <span>100 GH</span>
+            <button class="add-to-cart" data-name="Grilled Tilapia" data-price="100">Add to Cart</button>
+          </li>
+          <li>
+            <span>Grilled Tilapia, Jollof Rice</span>
+            <span>155 GH</span>
+            <button class="add-to-cart" data-name="Grilled Tilapia, Jollof Rice" data-price="155">Add to Cart</button>
+          </li>
+          <li>
+            <span>Grilled Tilapia, Fried Rice</span>
+            <span>165 GH</span>
+            <button class="add-to-cart" data-name="Grilled Tilapia, Fried Rice" data-price="165">Add to Cart</button>
+          </li>
+          <li>
+            <span>Grilled Tilapia, Plain Veg-Rice</span>
+            <span>130 GH</span>
+            <button class="add-to-cart" data-name="Grilled Tilapia, Plain Veg-Rice" data-price="130">Add to Cart</button>
+          </li>
+          <li>
+            <span>Grilled Tilapia, Fries/Yam Chips/Kelewele</span>
+            <span>120 GH</span>
+            <button class="add-to-cart" data-name="Grilled Tilapia, Fries/Yam Chips/Kelewele" data-price="120">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- SHAWARMA -->
+    <details>
+      <summary>SHAWARMA</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span>Chicken Shawarma</span>
+            <span>90 GH</span>
+            <button class="add-to-cart" data-name="Chicken Shawarma" data-price="90">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken Shawarma with Fries</span>
+            <span>110 GH</span>
+            <button class="add-to-cart" data-name="Chicken Shawarma with Fries" data-price="110">Add to Cart</button>
+          </li>
+          <li>
+            <span>Beef Shawarma</span>
+            <span>90 GH</span>
+            <button class="add-to-cart" data-name="Beef Shawarma" data-price="90">Add to Cart</button>
+          </li>
+          <li>
+            <span>Beef Shawarma with Fries</span>
+            <span>110 GH</span>
+            <button class="add-to-cart" data-name="Beef Shawarma with Fries" data-price="110">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken & Beef Shawarma</span>
+            <span>110 GH</span>
+            <button class="add-to-cart" data-name="Chicken & Beef Shawarma" data-price="110">Add to Cart</button>
+          </li>
+          <li>
+            <span>Chicken & Beef Shawarma with Fries</span>
+            <span>130 GH</span>
+            <button class="add-to-cart" data-name="Chicken & Beef Shawarma with Fries" data-price="130">Add to Cart</button>
+          </li>
+          <li>
+            <span>Add-On: +2 Sausages</span>
+            <span>+20 GH</span>
+            <button class="add-to-cart" data-name="Add-On: +2 Sausages" data-price="20">Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+<!--──────────────────────────────────────────────────────
+  end #SPECIALS
+──────────────────────────────────────────────────────-->
+
        
 
 
@@ -999,39 +1250,48 @@
       </div>
 
       <div class="footer-bottom">
+      <div class="container">
+
         <p class="copyright">
-          &copy; 2024 ChopExpress <a href="http://folafolio.dev" class="link" target="_blank" alt="Akinfolarin.d3v trademark">
-            <small>Designed by</small> Akinfolarin.D3v™
-          </a>
+          &copy;2025 ChopExpress <small class="design">Designed by </small><a class="design" href="https://www.folafolio.dev/">Akinfolarin.D3v</a>
         </p>
         <style>
-          .footer-bottom {
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background-color: #858383; /* Optional: Set a background color */
-          color: white; /* Optional: Set the text color */
-          text-align: center; /* Optional: Center the text */
-          padding: 10px 0; /* Optional: Add some padding */
-          z-index: 1000; /* Optional: Ensure the footer is above other content */
-        }
+          .design {
+              background: linear-gradient(87.01deg, #6d9be3 3.39%, #aadfc1 32.8%, #f4cd63 61.74%, #eb672d 94.48%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+          }
+        .footer-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:hsl(0, 0%, 0%);
+        color: white; 
+        text-align: center;
+        padding: 3px; 
+        z-index: 1000; 
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+                   
+      }
 
-        .footer-bottom a {
-          color: white; /* Optional: Change link color */
-          text-decoration: none; /* Optional: Remove underline */
-        }
+      .footer-bottom a {
+        color: white;
+        text-decoration: none;
+      }
 
-        .footer-bottom a:hover {
-          text-decoration: underline; /* Optional: Add underline on hover */
-        }
-
-        </style>
-      </div>
-      </div>
-
-    </div>
-  </footer>
+      .footer-bottom a:hover {
+        text-decoration: underline;
+      }
+      .footer-bottom .copyright {
+        margin: 0;
+      }
+      </style>
 
 
 

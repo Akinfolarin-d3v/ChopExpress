@@ -348,35 +348,32 @@
     
 
         <script>
-            
+  // Initialize EmailJS (unchanged)
+  (function() {
+    emailjs.init("wp7mSbUDSzvwKdmrr");
+  })();
 
-            
- // Initialize EmailJS
-(function() {
-    emailjs.init("wp7mSbUDSzvwKdmrr"); // Replace with your EmailJS user ID
-})();
+  // Retrieve and display cart items from localStorage
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const checkoutCartItems = document.getElementById("checkout-cart-items");
+  const checkoutTotalPrice = document.getElementById("checkout-total-price");
 
-// Retrieve and display cart items from localStorage
-const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-const checkoutCartItems = document.getElementById("checkout-cart-items");
-const checkoutTotalPrice = document.getElementById("checkout-total-price");
+  let totalPrice = 0;
 
-let totalPrice = 0;
-
-// Populate the cart items on the page
-if (cartItems.length > 0) {
+  // Populate the cart items on the page
+  if (cartItems.length > 0) {
     cartItems.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${item.name} - ₵${(item.price * item.quantity).toFixed(2)} x ${item.quantity}`;
-        checkoutCartItems.appendChild(listItem);
-        totalPrice += item.price * item.quantity;
+      const listItem = document.createElement("li");
+      listItem.textContent = `${item.name} - ₵${(item.price * item.quantity).toFixed(2)} × ${item.quantity}`;
+      checkoutCartItems.appendChild(listItem);
+      totalPrice += item.price * item.quantity;
     });
-}
+  }
 
-// Update the total price on the page
-checkoutTotalPrice.textContent = `Total: ₵${totalPrice.toFixed(2)}`;
+  // Update the total price on the page
+  checkoutTotalPrice.textContent = `Total: ₵${totalPrice.toFixed(2)}`;
 
-document.getElementById("place-order-btn").addEventListener("click", function(event) {
+  document.getElementById("place-order-btn").addEventListener("click", function(event) {
     event.preventDefault();
 
     // Collect user details
@@ -384,42 +381,47 @@ document.getElementById("place-order-btn").addEventListener("click", function(ev
     const phone = document.getElementById("phone").value;
     const address = document.getElementById("address").value;
 
-    // Check if cart items are present
-    const cartItemsDetails = cartItems.length > 0
-        ? cartItems.map(item => `${item.name} x ${item.quantity}`).join(", ")
-        : "No items in the cart";
+    // If cart is empty, warn the user
+    if (cartItems.length === 0) {
+      alert("Your cart is empty. Please add items before placing an order.");
+      return;
+    }
 
-    // Format the message for WhatsApp
-    const message = `Hello! Here are my order details:\n\n` +
-                    `Name: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n` +
-                    `Order Items: ${cartItemsDetails}\nTotal Price: ₵${totalPrice.toFixed(2)}\n\n` +
-                    `Thank you!`;
+    // Build the list of ordered items
+    const cartItemsDetails = cartItems
+      .map(item => `${item.name} × ${item.quantity}`)
+      .join(", ");
 
-    // Open WhatsApp with the pre-filled message
-    const whatsappNumber = "2330530549169"; // You can use the actual number
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    // Format the WhatsApp message
+    const message =
+      `Hello! Here are my order details:\n\n` +
+      `Name: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n` +
+      `Order Items: ${cartItemsDetails}\n` +
+      `Total Price: ₵${totalPrice.toFixed(2)}\n\n` +
+      `Thank you!`;
 
-    // Clear cart items from localStorage
+    // Use the API URL (ensures text is pre-filled)
+    const whatsappNumber = "2330530549169";
+    const whatsappURL =
+      `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+    // Clear cart items from localStorage *after* building the message
     localStorage.removeItem("cartItems");
 
-    // Optionally update the UI
-    checkoutCartItems.innerHTML = ""; // Clear the displayed cart items
-    checkoutTotalPrice.textContent = "Total: ₵0.00"; // Reset total price display
+    // Optionally clear the UI
+    checkoutCartItems.innerHTML = "";
+    checkoutTotalPrice.textContent = "Total: ₵0.00";
 
-    // Redirect to WhatsApp
+    // Open WhatsApp in a new tab/window with pre-filled text
     window.open(whatsappURL, "_blank");
-   // Redirect to the homepage after a slight delay
+
+    // Return to homepage after a 1-second delay
     setTimeout(() => {
-        window.location.href = "index.html"; // Replace "index.html" with your homepage URL
-    }, 1000); // Adjust the delay as needed (e.g., 1 second)
-});
+      window.location.href = "index.html";
+    }, 1000);
+  });
+</script>
 
-
-
-
-
-
-        </script>
         
         
 
